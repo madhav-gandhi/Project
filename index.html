@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StellarX - Revolutionizing Mars Waste Management | NASA Space Apps Challenge 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">StellarX</span>
+                <span class="logo-tagline">Revolutionizing Mars Waste Management</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#mission" class="nav-link">Mission</a>
+                <a href="#machines" class="nav-link">Machines</a>
+                <a href="#simulation" class="nav-link">Simulation</a>
+                <a href="#impact" class="nav-link">Impact</a>
+                <a href="#team" class="nav-link">Team</a>
+            </div>
+            <div class="nav-hamburger" id="nav-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particle Background -->
+    <div class="particles-container" id="particles"></div>
+
+    <!-- Landing Page Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <img src="https://pplx-res.cloudinary.com/image/upload/v1759582734/pplx_project_search_images/686976adb209e55bd8f1cb0cb7bb802475a8052e.png" alt="Mars Habitat" class="hero-bg-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-logo">
+                <h1 class="hero-title">StellarX</h1>
+                <p class="hero-subtitle">Revolutionizing Mars Waste Management</p>
+            </div>
+            <div class="hero-main">
+                <h2 class="hero-headline">4-Machine Integrated Recycling System</h2>
+                <p class="hero-description">Mars missions face unprecedented waste management challenges. With limited cargo capacity and no disposal infrastructure, every gram of waste becomes a critical problem. Current solutions are inadequate for long-term sustainability and crew safety.</p>
+                <!-- <p class="hero-description">Transforming 12,600 kg of astronaut waste into life-sustaining resources for Mars missions</p> -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="">12600</span>
+                        <span class="stat-label">kg Produced in 3 years</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-label">KG Daily Average Trash</span>
+                        
+                    </div>
+                    <!-- <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-label">Million USD Saved</span>
+                    </div> -->
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn--primary" onclick="scrollToSection('machines')">Explore Machines</button>
+                    <button class="btn btn--secondary" onclick="scrollToSection('simulation')">Start Simulation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Overview -->
+    <section id="mission" class="mission-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mission Overview</h2>
+                <p class="section-subtitle">Solving the 12,600 kg waste challenge for Mars exploration</p>
+            </div>
+            <div class="mission-content">
+                <div class="mission-problem">
+                    <h3>The Challenge</h3>
+                    <div class="problem-stats">
+                        <div class="problem-stat">
+                            <span class="problem-number">8</span>
+                            <span class="problem-label">Astronauts</span>
+                        </div>
+                        <div class="problem-stat">
+                            <span class="problem-number">3</span>
+                            <span class="problem-label">Years</span>
+                        </div>
+                        <div class="problem-stat">
+                            <span class="problem-number">12,600</span>
+                            <span class="problem-label">kg Waste</span>
+                        </div>
+                    </div>
+                    <p>Long-duration Mars missions generate massive amounts of inorganic waste, creating critical challenges for crew health, mission logistics, and sustainability.</p>
+                </div>
+                <div class="mission-solution">
+                    <h3>Our Solution</h3>
+                    <div class="solution-overview">
+                        <div class="solution-item">
+                            <div class="solution-icon ai-icon"></div>
+                            <h4>AI Sorting</h4>
+                            <p>High accuracy material identification</p>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-icon refab-icon"></div>
+                            <h4>3D Recycling</h4>
+                            <p>Tool fabrication from plastic waste</p>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-icon oscar-icon"></div>
+                            <h4></h4>
+                            <p>Syngas generation from mixed waste</p>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-icon facm-icon"></div>
+                            <h4>FACM</h4>
+                            <p>Metal to tools</p>
+                        </div>
+                        <div class="solution-item">
+                            <div class="solution-icon hmc-icon"></div>
+                            <h4>Radiation Shielding</h4>
+                            <p>Protective tiles from compacted waste</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Machines Gallery -->
+    <section id="machines" class="machines-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Machine Gallery</h2>
+                <p class="section-subtitle">Advanced recycling technologies for Mars survival</p>
+            </div>
+            <div class="machines-grid">
+                <!-- AI Sorting Machine -->
+                <div class="machine-card" data-machine="ai">
+                    <div class="machine-header">
+                        <h3>AI Sorting Machine</h3>
+                        <p class="machine-subtitle">Hyperspectral Vision System</p>
+                    </div>
+                    <div class="machine-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Efficiency</span>
+                            <div class="spec-bar">
+                                <div class="spec-fill" data-width="99"></div>
+                                <span class="spec-value">99%</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power</span>
+                            <span class="spec-value">0.5 kW</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rate</span>
+                            <span class="spec-value">50 items/min</span>
+                        </div>
+                    </div>
+                    <div class="machine-features">
+                        <ul>
+                            <li>200+ hyperspectral bands</li>
+                            <li>Chemical signature detection</li>
+                            <li>Automated material separation</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--outline machine-details-btn">View Details</button>
+                </div>
+
+                <!-- Refabricator -->
+                <div class="machine-card" data-machine="refab">
+                    <div class="machine-header">
+                        <h3>Refabricator</h3>
+                        <p class="machine-subtitle">3D Printing & Plastic Recycling</p>
+                    </div>
+                    <div class="machine-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Efficiency</span>
+                            <div class="spec-bar">
+                                <div class="spec-fill" data-width="85"></div>
+                                <span class="spec-value">85%</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power</span>
+                            <span class="spec-value">0.3 kW</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rate</span>
+                            <span class="spec-value">2 kg/hr</span>
+                        </div>
+                    </div>
+                    <div class="machine-features">
+                        <ul>
+                            <li>ISS-tested technology</li>
+                            <li>Closed-loop recycling</li>
+                            <li>On-demand tool manufacturing</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--outline machine-details-btn">View Details</button>
+                </div>
+
+                <!-- OSCAR -->
+                <div class="machine-card" data-machine="oscar">
+                    <div class="machine-header">
+                        <h3>OSCAR</h3>
+                        <p class="machine-subtitle">Trash-to-Gas Reactor</p>
+                    </div>
+                    <div class="machine-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Efficiency</span>
+                            <div class="spec-bar">
+                                <div class="spec-fill" data-width="90"></div>
+                                <span class="spec-value">90%</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power</span>
+                            <span class="spec-value">2.0 kW</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rate</span>
+                            <span class="spec-value">5 kg/hr</span>
+                        </div>
+                    </div>
+                    <div class="machine-features">
+                        <ul>
+                            <li>800-1200°C pyrolysis</li>
+                            <li>Syngas production</li>
+                            <li>Propellant generation</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--outline machine-details-btn">View Details</button>
+                </div>
+
+                <!-- HMC -->
+                <div class="machine-card" data-machine="hmc">
+                    <div class="machine-header">
+                        <h3>HMC</h3>
+                        <p class="machine-subtitle">Heat Melt Compactor</p>
+                    </div>
+                    <div class="machine-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Accuracy</span>
+                            <div class="spec-bar">
+                                <div class="spec-fill" data-width="95"></div>
+                                <span class="spec-value">95%</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power</span>
+                            <span class="spec-value">1.0 kW</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rate</span>
+                            <span class="spec-value">10 kg/cycle</span>
+                        </div>
+                    </div>
+                    <div class="machine-features">
+                        <ul>
+                            <li>87.5% volume reduction</li>
+                            <li>Radiation shielding tiles</li>
+                            <li>Water recovery system</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--outline machine-details-btn">View Details</button>
+                </div>
+                <!-- FACM -->
+                <div class="machine-card" data-machine="facm">
+                    <div class="machine-header">
+                        <h3>FACM</h3>
+                        <p class="machine-subtitle">Fully Automatic Casting Machine</p>
+                    </div>
+                    <div class="machine-specs">
+                        <div class="spec-item">
+                            <span class="spec-label">Efficiency</span>
+                            <div class="spec-bar">
+                                <div class="spec-fill" data-width="95"></div>
+                                <span class="spec-value">95%</span>
+                            </div>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Power</span>
+                            <span class="spec-value">0.3 kW</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Rate</span>
+                            <span class="spec-value">1 kg/cycle</span>
+                        </div>
+                    </div>
+                    <div class="machine-features">
+                        <ul>
+                            <li>Direct Metal Ingot Production</li>
+                            <li>Essential Metal Parts Manufacturing</li>
+                            <li>Metal recovery system</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn--outline machine-details-btn">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Astronaut Simulation -->
+    <section id="simulation" class="simulation-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Astronaut Simulation</h2>
+                <p class="section-subtitle">Experience Mars waste recycling firsthand</p>
+            </div>
+            <div class="simulation-container">
+                <div class="simulation-interface">
+                    <div class="simulation-header">
+                        <div class="astronaut-avatar"></div>
+                        <div class="mission-info">
+                            <h3 id="scenario-title">Daily Operations</h3>
+                            <p id="scenario-description">Process routine daily waste from 8 astronauts</p>
+                        </div>
+                        <div class="mission-timer">
+                            <span class="timer-label">Mission Day</span>
+                            <span class="timer-value" id="mission-day">1</span>
+                        </div>
+                    </div>
+                    
+                    <div class="simulation-workspace">
+                        <div class="waste-input-area">
+                            <h4>Waste Input</h4>
+                            <div class="waste-items" id="waste-items">
+                                <div class="waste-item" data-type="plastic" draggable="true">
+                                    <span class="waste-icon">🥤</span>
+                                    <span class="waste-label">Plastic Container</span>
+                                </div>
+                                <div class="waste-item" data-type="metal" draggable="true">
+                                    <span class="waste-icon">🥫</span>
+                                    <span class="waste-label">Metal Can</span>
+                                </div>
+                                <div class="waste-item" data-type="fabric" draggable="true">
+                                    <span class="waste-icon">👕</span>
+                                    <span class="waste-label">Fabric Waste</span>
+                                </div>
+                                <div class="waste-item" data-type="packaging" draggable="true">
+                                    <span class="waste-icon">📦</span>
+                                    <span class="waste-label">Packaging</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="machines-area">
+                            <h4>Processing Machines</h4>
+                            <div class="simulation-machines">
+                                <div class="sim-machine" data-machine="ai" id="sim-ai">
+                                    <div class="machine-icon ai-sim-icon"></div>
+                                    <h5>AI Sorting</h5>
+                                    <div class="machine-status idle">Ready</div>
+                                    <div class="drop-zone"></div>
+                                </div>
+                                <div class="sim-machine" data-machine="refab" id="sim-refab">
+                                    <div class="machine-icon refab-sim-icon"></div>
+                                    <h5>Refabricator</h5>
+                                    <div class="machine-status idle">Ready</div>
+                                    <div class="drop-zone"></div>
+                                </div>
+                                <div class="sim-machine" data-machine="oscar" id="sim-oscar">
+                                    <div class="machine-icon oscar-sim-icon"></div>
+                                    <h5>OSCAR</h5>
+                                    <div class="machine-status idle">Ready</div>
+                                    <div class="drop-zone"></div>
+                                </div>
+                                <div class="sim-machine" data-machine="hmc" id="sim-hmc">
+                                    <div class="machine-icon hmc-sim-icon"></div>
+                                    <h5>HMC</h5>
+                                    <div class="machine-status idle">Ready</div>
+                                    <div class="drop-zone"></div>
+                                </div>
+                                <div class="sim-machine" data-machine="facm" id="sim-facm">
+                                    <div class="machine-icon facm-sim-icon"></div>
+                                    <h5>FACM</h5>
+                                    <div class="machine-status idle">Ready</div>
+                                    <div class="drop-zone"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="outputs-area">
+                            <h4>Mission Outputs</h4>
+                            <div class="output-metrics">
+                                <div class="output-item">
+                                    <span class="output-icon">💧</span>
+                                    <span class="output-value" id="water-output">0</span>
+                                    <span class="output-label">kg Water</span>
+                                </div>
+                                <div class="output-item">
+                                    <span class="output-icon">🔧</span>
+                                    <span class="output-value" id="tools-output">0</span>
+                                    <span class="output-label">Tools</span>
+                                </div>
+                                <div class="output-item">
+                                    <span class="output-icon">⛽</span>
+                                    <span class="output-value" id="fuel-output">0</span>
+                                    <span class="output-label">kg Fuel</span>
+                                </div>
+                                <div class="output-item">
+                                    <span class="output-icon">🛡️</span>
+                                    <span class="output-value" id="shield-output">0</span>
+                                    <span class="output-label">m² Shield</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="simulation-controls">
+                        <button class="btn btn--secondary" id="reset-simulation">Reset</button>
+                        <button class="btn btn--outline" id="change-scenario">Change Scenario</button>
+                        <button class="btn btn--primary" id="process-waste">Process All</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Impact -->
+    <section id="impact" class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mission Impact</h2>
+                <p class="section-subtitle">Quantified benefits of our integrated recycling system</p>
+            </div>
+            <div class="impact-content">
+                <div class="impact-chart">
+                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/adcc833d7c014c4d1987123a5971c538/63d155b5-6280-4de3-8375-774a92f9c6de/88d5b154.png" alt="Mission Impact Flowchart" class="chart-image">
+                </div>
+                <div class="impact-metrics">
+                    <div class="metric-card">
+                        <div class="metric-icon water-icon"></div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-target="1200">0</h3>
+                            <p class="metric-label">kg Water Recovered</p>
+                            <p class="metric-description">40% reduction in resupply requirements</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon propellant-icon"></div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-target="990">0</h3>
+                            <p class="metric-label">kg Propellant Equivalent</p>
+                            <p class="metric-description">Saves 1-3.3 tons launch mass</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon shield-icon"></div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-target="500">0</h3>
+                            <p class="metric-label">m² Radiation Shielding</p>
+                            <p class="metric-description">Enhanced crew safety during storms</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon tools-icon"></div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-target="200">0</h3>
+                            <p class="metric-label">Tools & Parts Fabricated</p>
+                            <p class="metric-description">60% reduction in spare parts inventory</p>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon savings-icon"></div>
+                        <div class="metric-content">
+                            <h3 class="metric-value" data-target="10">0</h3>
+                            <p class="metric-label">Million USD Saved</p>
+                            <p class="metric-description">Per mission cost reduction</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Team StellarX</h2>
+                <p class="section-subtitle">Student innovators pioneering Mars sustainability</p>
+            </div>
+            <div class="team-content">
+                <div class="team-vision">
+                    <h3>Our Vision</h3>
+                    <p>Team StellarX represents the next generation of space innovators, combining cutting-edge engineering with sustainable design principles to solve humanity's greatest challenges in space exploration.</p>
+                    <p>Our integrated waste recycling system demonstrates how student innovation can contribute to NASA's Mars exploration goals while addressing critical sustainability challenges.</p>
+                </div>
+                <div class="competition-info">
+                    <h3>NASA Space Apps Challenge 2025</h3>
+                    <div class="challenge-details">
+                        <div class="challenge-item">
+                            <h4>Challenge Focus</h4>
+                            <p>Space Trash – Inorganic Waste Recycling on Mars</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h4>Project Goal</h4>
+                            <p>Design breakthrough solutions supporting astronaut survival, sustainability, and mission efficiency</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h4>Innovation Impact</h4>
+                            <p>Scalable technology from Mars missions to Earth applications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <h3>Connect With Us</h3>
+                    <p>Interested in our Mars recycling technology? Contact Team StellarX for collaboration opportunities and technical discussions.</p>
+                    <div class="contact-links">
+                        <a href="mailto:team@stellarx.space" class="btn btn--primary">Contact Team</a>
+                        <a href="#" target="_blank" class="btn btn--outline">NASA Space Apps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Machine Details Modal -->
+    <div class="modal hidden" id="machine-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Machine Details</h3>
+                <button class="modal-close" id="modal-close">&times;</button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
