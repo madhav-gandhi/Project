@@ -39,7 +39,7 @@
     <!-- Landing Page Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-background">
-            <img src="https://pplx-res.cloudinary.com/image/upload/v1759582734/pplx_project_search_images/686976adb209e55bd8f1cb0cb7bb802475a8052e.png" alt="Mars Habitat" class="hero-bg-image">
+            <!-- <img src="https://pplx-res.cloudinary.com/image/upload/v1759582734/pplx_project_search_images/686976adb209e55bd8f1cb0cb7bb802475a8052e.png" alt="Mars Habitat" class="hero-bg-image"> -->
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
@@ -57,7 +57,7 @@
                         <span class="stat-label">kg Produced in 3 years</span>
                     </div>
                     <div class="stat-item">
-                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-number" data-target="12">12</span>
                         <span class="stat-label">KG Daily Average Trash</span>
                         
                     </div>
@@ -68,7 +68,7 @@
                 </div>
                 <div class="hero-buttons">
                     <button class="btn btn--primary" onclick="scrollToSection('machines')">Explore Machines</button>
-                    <button class="btn btn--secondary" onclick="scrollToSection('simulation')">Start Simulation</button>
+                    <button class="btn btn--secondary" onclick="window.location.href='https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/45ae4058b264fbb4032b280faf818ce1/0da880c1-a207-49ec-9aee-6318021b3e1d/index.html'">Start Simulation</button>
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
                         </div>
                         <div class="solution-item">
                             <div class="solution-icon oscar-icon"></div>
-                            <h4></h4>
+                            <h4>OSCAR</h4>
                             <p>Syngas generation from mixed waste</p>
                         </div>
                         <div class="solution-item">
@@ -249,7 +249,7 @@
                     </div>
                     <div class="machine-specs">
                         <div class="spec-item">
-                            <span class="spec-label">Accuracy</span>
+                            <span class="spec-label">Efficiency</span>
                             <div class="spec-bar">
                                 <div class="spec-fill" data-width="95"></div>
                                 <span class="spec-value">95%</span>
@@ -289,7 +289,7 @@
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Power</span>
-                            <span class="spec-value">0.3 kW</span>
+                            <span class="spec-value">0.6 kW</span>
                         </div>
                         <div class="spec-item">
                             <span class="spec-label">Rate</span>
@@ -309,7 +309,7 @@
         </div>
     </section>
 
-    <!-- Astronaut Simulation -->
+    <!-- Astronaut Simulation
     <section id="simulation" class="simulation-section">
         <div class="container">
             <div class="section-header">
@@ -424,65 +424,118 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <!-- Mission Impact -->
-    <section id="impact" class="impact-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Mission Impact</h2>
-                <p class="section-subtitle">Quantified benefits of our integrated recycling system</p>
+
+    
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronaut Waste Processing Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> -->
+    
+
+
+
+
+
+
+        
+
+    <!-- 3D Printer Modal -->
+    <div class="modal hidden" id="printerModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🖨️ 3D Printer Interface</h3>
+                <button class="close-btn" onclick="closePrinterModal()">&times;</button>
             </div>
-            <div class="impact-content">
-                <div class="impact-chart">
-                    <img src="https://ppl-ai-code-interpreter-files.s3.amazonaws.com/web/direct-files/adcc833d7c014c4d1987123a5971c538/63d155b5-6280-4de3-8375-774a92f9c6de/88d5b154.png" alt="Mission Impact Flowchart" class="chart-image">
-                </div>
-                <div class="impact-metrics">
-                    <div class="metric-card">
-                        <div class="metric-icon water-icon"></div>
-                        <div class="metric-content">
-                            <h3 class="metric-value" data-target="1200">0</h3>
-                            <p class="metric-label">kg Water Recovered</p>
-                            <p class="metric-description">40% reduction in resupply requirements</p>
-                        </div>
+            <div class="modal-body">
+                <div class="available-filament">Available Filament: <span id="availableFilament">0</span> kg</div>
+                <div class="printer-options">
+                    <div class="printer-option" onclick="create3DProduct('cup', 0.2)">
+                        <div class="option-icon">☕</div>
+                        <div class="option-name">Cup</div>
+                        <div class="option-cost">0.2 kg filament</div>
                     </div>
-                    <div class="metric-card">
-                        <div class="metric-icon propellant-icon"></div>
-                        <div class="metric-content">
-                            <h3 class="metric-value" data-target="990">0</h3>
-                            <p class="metric-label">kg Propellant Equivalent</p>
-                            <p class="metric-description">Saves 1-3.3 tons launch mass</p>
-                        </div>
+                    <div class="printer-option" onclick="create3DProduct('box', 0.5)">
+                        <div class="option-icon">📦</div>
+                        <div class="option-name">Box</div>
+                        <div class="option-cost">0.5 kg filament</div>
                     </div>
-                    <div class="metric-card">
-                        <div class="metric-icon shield-icon"></div>
-                        <div class="metric-content">
-                            <h3 class="metric-value" data-target="500">0</h3>
-                            <p class="metric-label">m² Radiation Shielding</p>
-                            <p class="metric-description">Enhanced crew safety during storms</p>
-                        </div>
+                    <div class="printer-option" onclick="create3DProduct('tools', 0.3)">
+                        <div class="option-icon">🔧</div>
+                        <div class="option-name">Tools</div>
+                        <div class="option-cost">0.3 kg filament</div>
                     </div>
-                    <div class="metric-card">
-                        <div class="metric-icon tools-icon"></div>
-                        <div class="metric-content">
-                            <h3 class="metric-value" data-target="200">0</h3>
-                            <p class="metric-label">Tools & Parts Fabricated</p>
-                            <p class="metric-description">60% reduction in spare parts inventory</p>
-                        </div>
-                    </div>
-                    <div class="metric-card">
-                        <div class="metric-icon savings-icon"></div>
-                        <div class="metric-content">
-                            <h3 class="metric-value" data-target="10">0</h3>
-                            <p class="metric-label">Million USD Saved</p>
-                            <p class="metric-description">Per mission cost reduction</p>
-                        </div>
+                    <div class="printer-option" onclick="create3DProduct('parts', 0.4)">
+                        <div class="option-icon">⚙️</div>
+                        <div class="option-name">Parts</div>
+                        <div class="option-cost">0.4 kg filament</div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
+    <!-- Metal Fabrication Modal -->
+    <div class="modal hidden" id="fabricationModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🔨 Metal Fabrication Interface</h3>
+                <button class="close-btn" onclick="closeFabricationModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="available-nuggets">Available Metal Nuggets: <span id="availableNuggets">0</span> kg</div>
+                <div class="fabrication-options">
+                    <div class="fabrication-option" onclick="createMetalProduct('structural', 1.0)">
+                        <div class="option-icon">🏗️</div>
+                        <div class="option-name">Structural Parts</div>
+                        <div class="option-cost">1.0 kg nuggets</div>
+                    </div>
+                    <div class="fabrication-option" onclick="createMetalProduct('fasteners', 0.3)">
+                        <div class="option-icon">🔩</div>
+                        <div class="option-name">Fasteners</div>
+                        <div class="option-cost">0.3 kg nuggets</div>
+                    </div>
+                    <div class="fabrication-option" onclick="createMetalProduct('tools', 0.5)">
+                        <div class="option-icon">🔧</div>
+                        <div class="option-name">Tools</div>
+                        <div class="option-cost">0.5 kg nuggets</div>
+                    </div>
+                    <div class="fabrication-option" onclick="createMetalProduct('components', 0.7)">
+                        <div class="option-icon">⚙️</div>
+                        <div class="option-name">Components</div>
+                        <div class="option-cost">0.7 kg nuggets</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
     <!-- Team Section -->
     <section id="team" class="team-section">
         <div class="container">
@@ -514,12 +567,17 @@
                     </div>
                 </div>
                 <div class="contact-info">
-                    <h3>Connect With Us</h3>
-                    <p>Interested in our Mars recycling technology? Contact Team StellarX for collaboration opportunities and technical discussions.</p>
+                    <h3>Team Members</h3>
+                    <p>Muzammil Manek</p>
+                    <p>Madhav Gandhi</p>
+                    <p>Dev Trivedi</p>
                     <div class="contact-links">
+                        <b>Email : stellarx362@gmail.com</b>
+                    </div>
+                    <!-- <div class="contact-links">
                         <a href="mailto:team@stellarx.space" class="btn btn--primary">Contact Team</a>
                         <a href="#" target="_blank" class="btn btn--outline">NASA Space Apps</a>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
