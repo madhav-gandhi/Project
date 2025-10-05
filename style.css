@@ -1680,6 +1680,12 @@ section {
   flex-wrap: wrap;
 }
 
+.challenge-item_1 b {
+  color: var(--neon-cyan);
+  margin-bottom: var(--space-8);
+  font-size: 30px;
+}
+
 /* Modal */
 .modal {
   position: fixed;
